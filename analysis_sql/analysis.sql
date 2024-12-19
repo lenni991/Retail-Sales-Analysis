@@ -6,7 +6,7 @@ select * from orders_mod LIMIT 10;
 PRAGMA table_info(orders_mod);
 
 
--- find top 10 highest/lowest revueue generating products
+-- top 10 highest/lowest revueue generating products
 with CTE_TOP_PRODUCTS AS(
     SELECT *, sum(sale_price) as sales
     from orders_mod 
@@ -18,7 +18,7 @@ ORDER BY sales DESC LIMIT 10;
 
 
 
--- select top 5 highest selling products in each region
+-- top 5 highest selling products in each region
 with cte_region as (
     SELECT region, product_id, sum(sale_price) as sales
     from orders_mod 
@@ -30,9 +30,9 @@ from (SELECT * , row_number() OVER(PARTITION BY region ORDER BY sales DESC) as r
 where row_num <= 5;
 
 
---find month over month growth comparsion for 2022 and 2023 sales eg : jan 2022 vs jan 2023
---select substr(order_date,0,5) from orders_mod;
+--finding month over month growth comparsion for 2022 and 2023 sales eg : jan 2022 vs jan 2023
 
+--select substr(order_date,0,5) from orders_mod;
 SELECT sum(sale_price), strftime('%Y', order_date) AS year
 FROM orders_mod
 GROUP BY year;
