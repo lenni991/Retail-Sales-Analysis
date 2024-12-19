@@ -1,5 +1,4 @@
-# Sales Data Analysis
-
+# Retail-Sales-Analysis
 A data analysis project examining retail sales data using Python, Pandas, and SQL.
 
 ## Overview
@@ -42,3 +41,12 @@ The project workflow includes:
 - Monthly sales trends comparison between 2022 and 2023
 - Peak sales months by category
 - Subcategory growth analysis
+
+## Tools Used
+
+- **SQLite**
+- - **Jupyter Notebook**
+- **Python**
+- **Pandas**
+
+
