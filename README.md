@@ -45,7 +45,7 @@ The project workflow includes:
 ## Tools Used
 
 - **SQLite**
-- - **Jupyter Notebook**
+- **Jupyter Notebook**
 - **Python**
 - **Pandas**
 
