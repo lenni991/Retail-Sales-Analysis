@@ -42,8 +42,3 @@ The project workflow includes:
 - Monthly sales trends comparison between 2022 and 2023
 - Peak sales months by category
 - Subcategory growth analysis
-
-## Setup
-
-1. Clone this repository
-2. Install required packages:
